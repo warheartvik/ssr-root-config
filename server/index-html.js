@@ -51,7 +51,6 @@ app.use("*", (req, res, next) => {
   };
 
   const renderFragment = (name) => fragments[name]();
-
   sendLayoutHTTPResponse({
     serverLayout,
     urlPath: req.path,

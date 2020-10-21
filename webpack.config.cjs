@@ -27,5 +27,5 @@ module.exports = (env) => ({
     disableHostCheck: true,
   },
   plugins: [new CleanWebpackPlugin()],
-  externals: ["single-spa", /^@isomorphic-mf\/.+$/],
+  externals: ["single-spa", "vue", "vue-router", /^@isomorphic-mf\/.+$/],
 });

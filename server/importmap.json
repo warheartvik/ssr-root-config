@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
+    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
+    "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
+    "@isomorphic-mf/navbar": "https://storage.googleapis.com/isomorphic.microfrontends.app/navbar/7ff839ab60157442a44240317aad15dce9cec53c/isomorphic-mf-navbar.js",
+    "@isomorphic-mf/navbar/": "https://storage.googleapis.com/isomorphic.microfrontends.app/navbar/7ff839ab60157442a44240317aad15dce9cec53c/",
+    "@quipubyteltda/root-config": "http://localhost:9876/quipubyteltda-root-config.js",
+    "@isomorphic-mf/root-config": "https://storage.googleapis.com/isomorphic.microfrontends.app/root-config/8dafcd884b4ee1e3ad56764d2fdc93a83ae3eb4e/isomorphic-mf-root-config.js",
+    "@isomorphic-mf/root-config/": "https://storage.googleapis.com/isomorphic.microfrontends.app/root-config/8dafcd884b4ee1e3ad56764d2fdc93a83ae3eb4e/",
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.3/lib/system/single-spa.min.js",
+    "@isomorphic-mf/pokemons": "https://storage.googleapis.com/isomorphic.microfrontends.app/pokemons/bc6c8276508bcb023435fd9b99faf36b66fd4189/isomorphic-mf-pokemons.js",
+    "@isomorphic-mf/pokemons/": "https://storage.googleapis.com/isomorphic.microfrontends.app/pokemons/bc6c8276508bcb023435fd9b99faf36b66fd4189/",
+    "app1": "http://localhost:8081/js/app.js"
+  }
+}

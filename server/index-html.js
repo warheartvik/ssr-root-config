@@ -15,8 +15,7 @@ app.use("*", (req, res, next) => {
   const importSuffix = developmentMode ? `?ts=${Date.now()}` : "";
 
   const importMapsPromise = getImportMaps({
-    url:
-      "https://storage.googleapis.com/isomorphic.microfrontends.app/importmap.json",
+    url: "http://localhost:9876/server/importmap.json",
     nodeKeyFilter(importMapKey) {
       return importMapKey.startsWith("@isomorphic-mf");
     },
@@ -24,12 +23,12 @@ app.use("*", (req, res, next) => {
     allowOverrides: true,
   }).then(({ nodeImportMap, browserImportMap }) => {
     global.nodeLoader.setImportMapPromise(Promise.resolve(nodeImportMap));
-    if (developmentMode) {
-      browserImportMap.imports["@isomorphic-mf/root-config"] =
-        "http://localhost:9876/isomorphic-mf-root-config.js";
-      browserImportMap.imports["@isomorphic-mf/root-config/"] =
-        "http://localhost:9876/";
-    }
+    // if (developmentMode) {
+    //   browserImportMap.imports["@isomorphic-mf/root-config"] =
+    //     "http://localhost:9876/isomorphic-mf-root-config.js";
+    //   browserImportMap.imports["@isomorphic-mf/root-config/"] =
+    //     "http://localhost:9876/";
+    // }
     return { nodeImportMap, browserImportMap };
   });
 

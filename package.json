@@ -57,7 +57,9 @@
     "react-dom": "^16.14.0",
     "single-spa": "^5.8.0",
     "single-spa-layout": "^1.1.2",
-    "single-spa-web-server-utils": "^1.17.0"
+    "single-spa-web-server-utils": "^1.17.0",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.8"
   },
   "engines": {
     "node": ">= 14"

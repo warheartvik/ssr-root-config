@@ -6,6 +6,10 @@ import {
 import _ from "lodash";
 import { getImportMaps } from "single-spa-web-server-utils";
 
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
 const serverLayout = constructServerLayout({
   filePath: "server/views/index.html",
 });
